@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ItemList from './ItemList/ItemList';
 import Top from './Top/Top';
 import NextButton from './NextButton/NextButton';
+import Bottom from './Bottom/Bottom';
 
 class App extends Component {
 
@@ -37,6 +38,7 @@ class App extends Component {
           <ItemList itemList={this.state.itemList}/>
           <NextButton />
         </div>
+        <Bottom />
       </div>
     );
   }
