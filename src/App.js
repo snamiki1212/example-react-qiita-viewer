@@ -12,14 +12,13 @@ class App extends Component {
     super(props);
     this.state = {
       itemList: [],
-      loading: false,
+      loading: true,
     };
     this.fetchItemList()
   }
 
   fetchItemList(){
     let t = this;
-    this.setState({loading: true});
     console.log(this.state.loading, "inner fetch1");
     fetch(this.url)
       .then(function(res){
