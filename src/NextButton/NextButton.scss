@@ -1,0 +1,17 @@
+@import '../App.scss';
+
+.nextButton{
+  // flex
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+  // basics
+  background-color: $base-first-color;
+  width: 30%;
+  color:white;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
