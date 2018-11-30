@@ -31,7 +31,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className='App'>
+      <div className='app'>
         <Top />
         <div className="content">
           <ItemList itemList={this.state.itemList}/>
