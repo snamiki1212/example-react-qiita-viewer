@@ -1,7 +1,7 @@
 import React from 'react';
 import Item from '../Item/Item'
 import User from '../User/User'
-import './ItemList.css';
+import './ItemList.scss';
 
 class ItemList extends React.Component{
 
