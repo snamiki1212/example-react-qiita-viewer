@@ -6,7 +6,7 @@ class Top extends React.Component {
   render(){
     return(
       <div className="top">
-        <p>Qiita-react-viewer v1</p>
+        <p>Qiita Viewer with React</p>
         <a href={this.githubUrl} target="_blank">Github</a>
       </div>
     );
