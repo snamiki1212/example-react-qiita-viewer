@@ -7,7 +7,7 @@ import Loading from './Loading/Loading';
 
 class App extends Component {
 
-  url = 'https://api.myjson.com/bins/dbctm';
+  url = 'https://qiita.com/api/v2/items';
   constructor(props){
     super(props);
     this.state = {
