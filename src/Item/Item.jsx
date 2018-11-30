@@ -8,6 +8,7 @@ class Item extends React.Component{
       <a href={this.props.url} target="_blank" className="item">
         <div className="avatorImg">{this.props.userImg}</div>
         <div className="itemText">{this.props.title}</div>
+        <hr className="vartical"/>
         <div className="likesCount">{this.props.likes_count}いいね</div>
       </a>
     );

@@ -11,14 +11,14 @@
   // basics
   border-radius: 10px;
   margin: 30px;
-  padding: 10px;
+  padding: 20px;
   background-color: $base-first-color;
   color: white;
   text-decoration: none;
 }
 
 .avatorImg{
-  padding-right: 10px;
+  margin-right: 20px;
 }
 
 .itemText{
@@ -30,4 +30,14 @@
 .likesCount{
   font-size: 24px;
   font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.vartical{
+  background-color: white;
+  border: 0px;
+  width: 1px;
+  height: 100%;
+
+  padding: 0;
+  margin: 0 20px;
 }
