@@ -1,7 +1,10 @@
 .itemList{
+  // flex
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  // basics
   margin: 0 100px;
-  width:90%;
+  width: 90%;
 }
