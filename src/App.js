@@ -21,16 +21,12 @@ class App extends Component {
   fetchItemList(){
     let t = this;
     t.setState({loading: !t.state.loading});
-    console.log(this.state.loading, "inner fetch1");
     const willFetchURL = this.url + "?" + `page=${t.state.nextPage}`;
-    console.log(willFetchURL, "willFetchURL");
     fetch(willFetchURL)
       .then(function(res){
         return res.json()
       })
       .then(function(json){
-        console.log(json, "inner fetchItemList");
-        console.log(t.state.loading, "inner fetch2");
         t.setState({
           itemList: t.state.itemList.concat(json),
           loading: false,
@@ -48,7 +44,6 @@ class App extends Component {
         <Top />
         <div className="content">
           <ItemList itemList={this.state.itemList}/>
-          {console.log(this.state.loading, "log")}
           { this.state.loading ? <Loading /> : <NextButton fetchItem={() => this.fetchItemList()}/>}
         </div>
         <Bottom />

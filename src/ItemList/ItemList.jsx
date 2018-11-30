@@ -9,18 +9,15 @@ class ItemList extends React.Component{
     let itemList = this.props.itemList
     return(
       <div className="itemList">
-        {itemList.map( item =>
-          // <div>
-            <Item
-              key={1} // TODO
-              title={item.title}
-              url={item.url}
-              likes_count={item.likes_count}
-              userImg={<User avator={item.user.profile_image_url} />}
-            />
-          // </div>
-          )
-        }
+        {itemList.map( (item, index) =>
+          <Item
+            key={index}
+            title={item.title}
+            url={item.url}
+            likes_count={item.likes_count}
+            userImg={<User avator={item.user.profile_image_url} />}
+          />
+        )}
       </div>
     );
   }
