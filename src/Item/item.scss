@@ -1,13 +1,20 @@
+@import '../App.scss';
+
 .item{
+  // flex
   display:flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+
+  // basics
   border-radius: 10px;
   margin: 30px;
   padding: 10px;
-  background-color: lightgreen;
+  background-color: $base-first-color;
+  color: white;
+  text-decoration: none;
 }
 
 .avatorImg{
