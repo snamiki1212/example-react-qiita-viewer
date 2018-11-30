@@ -4,9 +4,9 @@ import './NextButton.scss';
 class NextButton extends React.Component{
   render(){
     return(
-      <div className="nextButton">
-        this is next Button.
-      </div>
+      <button onClick={this.props.fetchItem} className="nextButton">
+        NEXT
+      </button>
     );
   };
 }

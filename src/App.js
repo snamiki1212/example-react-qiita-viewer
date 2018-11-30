@@ -13,6 +13,7 @@ class App extends Component {
     this.state = {
       itemList: [],
       loading: true,
+      nextPage: 1,
     };
     this.fetchItemList()
   }
@@ -20,14 +21,20 @@ class App extends Component {
   fetchItemList(){
     let t = this;
     console.log(this.state.loading, "inner fetch1");
-    fetch(this.url)
+    const willFetchURL = this.url + "?" + `page=${t.state.nextPage}`;
+    console.log(willFetchURL, "willFetchURL");
+    fetch(willFetchURL)
       .then(function(res){
         return res.json()
       })
       .then(function(json){
         console.log(json, "inner fetchItemList");
         console.log(t.state.loading, "inner fetch2");
-        t.setState({itemList: json, loading: false});
+        t.setState({
+          itemList: json,
+          loading: false,
+          nextPage: t.state.nextPage + 1,
+        });
       })
       .catch(function(error){
         console.log(error);
@@ -41,7 +48,7 @@ class App extends Component {
         <div className="content">
           <ItemList itemList={this.state.itemList}/>
           {console.log(this.state.loading, "log")}
-          { this.state.loading ? <Loading /> : <NextButton />}
+          { this.state.loading ? <Loading /> : <NextButton fetchItem={() => this.fetchItemList()}/>}
         </div>
         <Bottom />
       </div>
