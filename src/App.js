@@ -20,6 +20,7 @@ class App extends Component {
 
   fetchItemList(){
     let t = this;
+    t.setState({loading: !t.state.loading});
     console.log(this.state.loading, "inner fetch1");
     const willFetchURL = this.url + "?" + `page=${t.state.nextPage}`;
     console.log(willFetchURL, "willFetchURL");
