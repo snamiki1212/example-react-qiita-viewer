@@ -1,0 +1,18 @@
+@import '../App.scss';
+
+.top{
+   /* flex */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  /* basics */
+  background-color: $base-first-color;
+  height: 50px;
+  p {
+    color: white;
+    font-size: 32px;
+    font-family: $base-font-family;
+  }
+}

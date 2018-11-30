@@ -1,10 +1,13 @@
 import React from 'react';
+import './Top.scss';
 
 class Top extends React.Component {
+  githubUrl="https://github.com/snamiki1212";
   render(){
     return(
       <div className="top">
-        <p>qiita-react-viwer</p>
+        <p>Qiita-react-viewer v1</p>
+        <a href={this.githubUrl} target="_blank">Github</a>
       </div>
     );
   }
