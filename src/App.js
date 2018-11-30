@@ -42,7 +42,7 @@ class App extends Component {
         <div className="content">
           <ItemList itemList={this.state.itemList}/>
           {console.log(this.state.loading, "log")}
-          {! this.state.loading ? <Loading /> : <NextButton />}
+          { this.state.loading ? <Loading /> : <NextButton />}
         </div>
         <Bottom />
       </div>

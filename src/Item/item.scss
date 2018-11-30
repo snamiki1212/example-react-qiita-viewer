@@ -13,8 +13,8 @@
   border-radius: 10px;
   margin: 5px;
   padding: 20px;
-  background-color: $base-first-color;
-  color: white;
+  background-color: rgba(15,15,15, 0.02);
+  color: $base-first-color;
   text-decoration: none;
 
   // card
@@ -22,8 +22,12 @@
   transition: 0.3s;
 }
 .item:hover {
-  color: lightslategray;
+  background-color: $base-first-color;
+  color: white;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  .vartical{
+    background-color: white;
+  }
 }
 
 .avatorImg{
@@ -43,7 +47,7 @@
 }
 
 .vartical{
-  background-color: white;
+  background-color: $base-first-color;
   border: 0px;
   min-width: 1px;
   height: 100%;
