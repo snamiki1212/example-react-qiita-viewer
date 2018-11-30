@@ -31,7 +31,7 @@ class App extends Component {
         console.log(json, "inner fetchItemList");
         console.log(t.state.loading, "inner fetch2");
         t.setState({
-          itemList: json,
+          itemList: t.state.itemList.concat(json),
           loading: false,
           nextPage: t.state.nextPage + 1,
         });
