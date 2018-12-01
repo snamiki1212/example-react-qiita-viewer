@@ -2,7 +2,7 @@ import React from 'react';
 import './Top.scss';
 
 class Top extends React.Component {
-  githubUrl="https://github.com/snamiki1212";
+  githubUrl="https://github.com/snamiki1212/qiita-viewer-with-react";
   render(){
     return(
       <div className="top">
