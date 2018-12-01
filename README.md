@@ -4,3 +4,4 @@
 - stack
   - React
   - SASS
+  - on githubpages
