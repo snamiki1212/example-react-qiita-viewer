@@ -6,6 +6,8 @@
 This application is qiita viewer for [Qiita](https://qiita.com/).
 You can get qiita articles randomly.
 
+Try [Qiita Viewer with React](https://snamiki1212.github.io/qiita-viewer-with-react/)👈👈👈
+
 ## Tech stack
 
 - React
