@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/qiita-viewer-with-react/precache-manifest.a333f82e4866132f50ee49c58e2bb93c.js"
+  "/qiita-viewer-with-react/precache-manifest.1740c55ece547750c7e42791bece0843.js"
 );
 
 workbox.clientsClaim();
