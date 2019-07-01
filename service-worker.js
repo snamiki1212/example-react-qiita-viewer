@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/qiita-viewer-with-react/precache-manifest.1740c55ece547750c7e42791bece0843.js"
+  "/example-react-qiita-viewer/precache-manifest.f42af9384595e6d6e83fcf38493b06a6.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/qiita-viewer-with-react/index.html", {
+workbox.routing.registerNavigationRoute("/example-react-qiita-viewer/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
